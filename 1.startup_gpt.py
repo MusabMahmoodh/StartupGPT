@@ -19,7 +19,7 @@ agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
 
 # Run the agent!
 response = agent_executor.invoke({
-    "input": "Write a Python script to scrape the top 5 trending AI repositories on GitHub. Use DuckDuckGo to find current trends."
+    "input": "Create a Flask API endpoint for text summarization."
 })
 
 print(response["output"])
